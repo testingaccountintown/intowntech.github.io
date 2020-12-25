@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/ico/favicon-16x16.png">
+    <link rel="manifest" href="assets/ico/site.webmanifest">
+    <link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="assets/libs/fullpage.js/dist/fullpage.min.css">
+    <link rel="stylesheet" href="assets/libs/highlightjs/styles/codepen-embed.css">
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/incline-icons/style.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+
+    <title>InTown Tech | Web Development</title>
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-header" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-video modal-lg" role="document">
+        <div class="modal-content">
+
+          <!-- Header -->
+          <div class="modal-header">
+
+            <!-- Title -->
+            <h4 class="modal-title text-white" id="modal-video-header">
+              Video demonstration
+            </h4>
+
+            <!-- Close -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
+          </div>
+          <div class="modal-body">
+        
+            <!-- Video -->
+            <video src="assets/video/1.mp4" class="img-fluid" controls></video>
+
+          </div>
+        </div> <!-- / .modal-content -->
+      </div> <!-- / .modal-dialog -->
+    </div> <!-- / .modal -->
+
+    <!-- NAVBAR
+    ================================================= -->
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+          <svg class="navbar-brand-svg" viewBox="0 0 245 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M0 0 L 20 10 L 0 20 Z" class="navbar-brand-svg-i" fill="currentColor"></path>
+            <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
+            <text x="40" y="70" font-family="Arial, sans-serif" font-size="60" font-weight="bold" letter-spacing="-.025em" fill="currentColor">InTown</text>
+          </svg>
+        </a>
+  
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Social -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.facebook.com/intowntech.us/" class="nav-link" target="_blank">
+                <i class="fab fa-facebook"></i> 
+                <span class="d-xl-none ml-2">
+                  Facebook
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/intown_tech" class="nav-link" target="_blank">
+                <i class="fab fa-twitter"></i> 
+                <span class="d-xl-none ml-2">
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.instagram.com/intowntech/" class="nav-link" target="_blank">
+                <i class="fab fa-instagram"></i> 
+                <span class="d-xl-none ml-2">
+                  Instagram
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarWelcome" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Welcome
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarWelcome">
+                <a class="dropdown-item " href="">
+                  What Does InTown Do ?
+                </a>
+                <a class="dropdown-item " href="#whoisintown">
+                  Who is InTown ?
+                </a>
+                <a class="dropdown-item  active " href="#intownexcellence">
+                  InTown Excellence.
+                </a>
+                <a class="dropdown-item " href="#techtalk">
+                  Tech Talk
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarLandings">
+                <a class="dropdown-item " href="app.html">
+                  App Development 
+                </a>
+                <a class="dropdown-item " href="web.html">
+                  Website Development
+                </a>
+                <a class="dropdown-item " href="fullpage.html">
+                  Digital Marketing 
+                </a>
+                <a class="dropdown-item " href="product.html">
+                  Project Management 
+                </a>
+                <a class="dropdown-item " href="real-estate.html">
+                  IT Infrustructure Management 
+                </a>
+                <a class="dropdown-item " href="restaurant.html">
+                  Cyber Security
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarPages">
+                <li class="dropright">
+                  <a class="dropdown-item dropdown-toggle" href="#" id="pagesBlog" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Story
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="pagesBlog">
+                    <a class="dropdown-item " href="blog.html">
+                     Company Mission 
+                    </a>
+                    <a class="dropdown-item " href="blog-post.html">
+                      Background
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarComponents" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Our Team
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarComponents">
+                <a class="dropdown-item " href="components-theme.html">
+                  Executives
+                </a>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a href="documentation.html" class="nav-link">
+                Tech Talk
+              </a>
+            </li>
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:customerservice@intowntechnology.com" target="_blank" class="nav-link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- / .navbar-collapse -->
+  
+      </div> <!-- / .container -->    
+    </nav>
+
+
+    <!-- HERO
+    ================================================== -->
+    <section class="section section-top">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+
+            <!-- Preheading -->
+            <p class="font-weight-medium text-center text-xs text-uppercase text-primary" data-toggle="animation" data-animation="fadeUp" data-animation-order="0" data-animation-trigger="load">
+              "Together We Reach The Goal"
+            </p>
+            
+            <!-- Heading -->
+            <h1 class="mb-4 text-center" data-toggle="animation" data-animation="fadeUp" data-animation-order="1" data-animation-trigger="load">
+              Creating beautiful websites like no one else.
+            </h1>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted" data-toggle="animation" data-animation="fadeUp" data-animation-order="2" data-animation-trigger="load">
+              Your website is a major part of your digital representation. It is imperative that your business has an modern website, and reflects current information. Let's get started today!
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row form-row align-items-center">
+          <div class="col-3">
+
+            <div class="img-square">
+              <img src="assets/img/62.jpg" alt="..." class="img-cover">
+            </div>
+            
+          </div>
+          <div class="col-6">
+            <div class="row form-row align-items-end mb-2">
+              <div class="col-7">
+                
+                <div class="img-square">
+                  <img src="assets/img/63.jpg" alt="..." class="img-cover">
+                </div>
+
+              </div>
+              <div class="col-5">
+                
+                <div class="img-square">
+                  <img src="assets/img/64.jpg" alt="..." class="img-cover">
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+            <div class="row form-row">
+              <div class="col-5">
+                
+                <div class="img-square">
+                  <img src="assets/img/65.jpg" alt="..." class="img-cover">
+                </div>
+
+              </div>
+              <div class="col-7">
+                
+                <div class="img-square">
+                  <img src="assets/img/66.jpg" alt="..." class="img-cover">
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+          </div>
+          <div class="col-3">
+
+            <div class="img-square">
+              <img src="assets/img/61.jpg" alt="..." class="img-cover">
+            </div>
+            
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="section bg-light" id="about">
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-dark bg-triangle-top bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-dark bg-triangle-bottom bg-triangle-right"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-lg-6">
+            
+            <!-- Heading -->
+            <h2 class="mb-4">
+              A team of passinate designers and developers who are <span class="text-primary">unmatched</span>
+            </h2>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-md-8">
+
+            <!-- Subheading -->
+            <p>
+               At InTown we succeed when you succeed. We hold our team to the highest standards of excellence.
+            </p>
+            <p>
+              <a href="mailto:customerservice@intowntechnology.com" class="btn btn-outline-primary" target="_blank">
+                Get in touch with us
+              </a>
+            </p>
+
+          </div>
+          <div class="col-md-4">
+            
+            <!-- Blockquote -->
+            <blockquote class="blockquote border-left">
+              <p>
+                I cannot find any other design studio that can match InTown's prices and customer service!
+              </p>
+              <footer class="text-muted">
+                <div class="avatar avatar mr-3">
+                  <img src="assets/img/16.jpg" alt="..." class="img-cover rounded-circle">
+                </div> Kyle Raymond, New York
+              </footer>
+            </blockquote>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- FEATURES
+    ================================================== -->
+    <section class="section">
+
+      <!-- Line -->
+      <div class="line line-top"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+          
+            <!-- Heading -->
+            <h2 class="text-center mb-4">
+              See why people choose us
+            </h2>
+
+            <!-- Subheading -->
+            <p class="text-center text-muted text-left mb-5">
+              InTown is becoming the go to IT partner for small business around the world, and for good reason.
+            </p>
+          
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center mb-5 mb-md-0">
+              
+              <!-- Icon -->
+              <div class="text-primary mb-4">
+                <span class="icon icon-businessman icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="mb-3">
+                Professional designers
+              </h4>
+
+              <!-- Content -->
+              <p class="text-muted mb-0">
+                Our designers holds various degrees, certifications, and experiences in all the areas needed to create the perfect solution.
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center mb-5 mb-md-0">
+              
+              <!-- Icon -->
+              <div class="text-primary mb-4">
+                <span class="icon icon-shield icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="mb-3">
+                Quality control
+              </h4>
+
+              <!-- Content -->
+              <p class="text-muted mb-0">
+                We define website quality as creating the optimal solution for your individual business. We stop at nothing to provide our best. 
+              </p>
+
+            </div>
+
+          </div>
+          <div class="col-md-4">
+
+            <!-- Item -->
+            <div class="text-center">
+              
+              <!-- Icon -->
+              <div class="text-primary mb-4">
+                <span class="icon icon-clock icon-2x"></span>
+              </div>
+
+              <!-- Heading -->
+              <h4 class="mb-3">
+                Timely delivery
+              </h4>
+
+              <!-- Content -->
+              <p class="text-muted mb-0">
+                At InTown, we utilize artifical intelligence to provide fast and efficent service.
+              </p>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- INFO
+    ================================================== -->
+    <section class="bg-light overflow-hidden">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-md-6 section pb-0 py-md-0">
+            
+            <!-- Image -->
+            <div class="img-half img-half-left">
+              <img src="assets/img/59.jpg" alt="..." class="img-cover">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-xl-5 offset-xl-1 section">
+
+            <!-- Heading -->
+            <h3 class="mb-4">
+              Technology consulting company that <span class="text-primary">creates brands</span> for the most exciting companies in the world.
+            </h3>
+
+            <!-- Text -->
+            <p>
+              Our resume speaks for itself. We truly enjoy our relationships with the businesses we involve ourself with. Creating successful businesses is our pride and joy.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- INFO
+    ================================================== -->
+    <section class="bg-light overflow-hidden">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-md-6 offset-xl-1 order-md-2">
+            
+            <!-- Image -->
+            <div class="img-half">
+              <img src="assets/img/60.jpg" alt="..." class="img-cover">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 col-xl-5 order-md-1 section">
+
+            <!-- Heading -->
+            <h3 class="mb-4">
+              We belive that the best projects result from <span class="text-primary">flawless</span> communication. 
+            </h3>
+
+            <!-- Text -->
+            <p>
+              When you choose InTown you choose to be taken care of. Our leadership team creates solution that facilates effective communication throughout the entire development process. Contact us with any question or concern that you have. The time is now to create the website your business needs. 
+            </p>
+
+            <!-- Button -->
+            <a href="#itpricing" class="btn btn-outline-primary">
+              Get Started
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- PRICING
+    ================================================== -->
+    <section class="section bg-dark" id="itpricing">
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-top bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-12 col-lg-4">
+
+            <!-- Preheading -->
+            <p class="mb-2 font-weight-medium text-uppercase text-xs text-white text-muted">  
+              Pricing options
+            </p>
+            
+            <!-- Heading -->
+            <h2 class="mb-4 text-white">
+              How much it will cost
+            </h2>
+
+            <!-- Subheading -->
+            <p class="mb-5 text-white text-muted">
+              At InTown, we offer the best in class pricing coupled with the highest standards of quality.
+            </p>
+
+            <!-- Button -->
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/intowntechnology/intown-tech-collaboration-session'});return false;" class="mb-5 mb-lg-0 btn btn-outline-primary text-white text-white">
+              Schedule a meeting
+            </a>
+
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4"> 
+
+            <!-- Card -->
+            <div class="card card-lg shadow mb-3 mb-lg-0">
+              
+              <!-- Body -->
+              <div class="card-body text-center">
+
+                <!-- Title -->
+                <h4 class="card-title text-white">
+                  Standard eCommerce Website
+                </h4>
+
+                <!-- Price -->
+                <h3 class="card-title font-weight-normal text-primary">
+                  $49.99
+                </h3>
+
+                <!-- Text -->
+                <ul class="card-text list-iconed text-white text-muted">
+                  <li class="list-iconed-item">
+                    Shopify, Squarespace, Wix, etc.
+                  </li>
+                  <li class="list-iconed-item">
+                    Full website setup.
+                  </li>
+                  <li class="list-iconed-item">
+                    3 Months of Tech Support
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <a href="mailto:customerservice@intowntechnology.com" class="btn btn-outline-primary text-white">
+                  Contact us
+                </a>
+
+              </div>
+              
+            </div> <!-- / .card -->
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            
+            <!-- Card -->
+            <div class="card card-active shadow card-lg mb-0">
+              
+              <!-- Body -->
+              <div class="card-body text-center">
+
+                <!-- Title -->
+                <h4 class="card-title text-white">
+                  Full Website Solution
+                </h4>
+
+                <!-- Price -->
+                <h3 class="card-title font-weight-normal text-primary">
+                  $490.00
+                </h3>
+
+                <!-- Text -->
+                <ul class="card-text list-iconed text-white text-muted">
+                  <li class="list-iconed-item">
+                    Digital presence creation
+                  </li>
+                  <li class="list-iconed-item">
+                    Built for growing businesses.
+                  </li>
+                  <li class="list-iconed-item">
+                    Customizable solution to fit the needs of your business.
+                  </li>
+                </ul>
+
+                <!-- Button -->
+                <a href="mailto:customerservice@intowntechnology.com" class="btn btn-outline-primary text-white">
+                  Contact us
+                </a>
+
+              </div>
+              
+            </div> <!-- / .card -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- SERVICES
+    ================================================== -->
+    <section class="section">
+
+      <!-- Content -->
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 col-lg-5">
+            
+            <!-- Image -->
+            <div class="img-effect img-effect-dotted mb-5 mb-md-0">
+              <img src="assets/img/55.jpg" class="img-fluid" alt="...">
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 offset-lg-1">
+            
+            <!-- Preheading -->
+            <p class="mb-2 font-weight-medium text-uppercase text-xs text-muted">
+              Key services
+            </p>
+
+            <!-- Heading -->
+            <h2 class="mb-4">
+              See what we can do for you
+            </h2>
+
+            <!-- Subheading -->
+            <p class="mb-5 text-muted">
+              We bring the latest technology into your business. By choosing InTown as your IT partner. We will ensure you have the best in class technology.
+            </p>
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-edit icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Web design & development
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    Our team of expert developers builds premium websites for our exclusive client base.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-puzzle icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    UI & UX optimization
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    We also specialize in creating optimal user interfaces and experiences. 
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-5 mb-lg-0">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-at icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Digital marketing
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    Our Marketing Team is dedicated to bringing your brand to the world.
+                  </p>
+
+                </div>
+
+              </div>
+              <div class="col-12 col-lg-6">
+                
+                <!-- Item -->
+                <div class="mb-0">
+                  
+                  <!-- Icon -->
+                  <div class="text-primary mb-4">
+                    <span class="icon icon-diamond icon-2x"></span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h4 class="mb-3">
+                    Branding services
+                  </h4>
+
+                  <!-- Content -->
+                  <p class="text-muted mb-0">
+                    We are dedicated to creating household brand names. 
+                  </p>
+
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="section bg-dark">
+
+      <!-- Triangles -->
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-left"></div>
+      <div class="bg-triangle bg-triangle-light bg-triangle-bottom bg-triangle-right"></div>
+
+      <!--Content -->
+      <div class="container">
+        <div class="row align-self-center">
+          <div class="col-md-auto">
+
+            <!-- Brand -->
+            <p>
+              <a href="#" class="footer-brand text-white">
+                <img class="footer-brand-svg" viewBox="0 0 235 80" src="assets/img/intown.png">
+                  <path d="M0 0 L 20 10 L 0 20 Z" class="text-primary" fill="currentColor"></path>
+                  <path d="M0 30 L 20 40 L 0 50 Z M20 45 L 0 55 L 20 65 Z M0 60 L 20 70 L 0 80 Z" fill="currentColor"></path>
+                </svg>
+              </a>
+            </p>
+        
+          </div>
+          <div class="col-md">
+        
+            <!-- Links -->
+            <ul class="list-unstyled list-inline text-md-right">
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  Terms and conditions
+                </a>
+              </li>
+              <li class="list-inline-item mr-2">
+                <a href="#" class="text-white">
+                  Privacy policy
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row align-items-center">
+          <div class="col-md">
+        
+            <!-- Copyright -->
+            <p class="text-white text-muted">
+              <small>
+                &copy; Copyright <span class="current-year"></span> InTown Technology, LLC. All rights reserved.
+              </small>
+            </p>
+
+          </div>
+          <div class="col-md">
+        
+            <!-- Social links -->
+            <ul class="list-inline list-unstyled text-md-right">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/intowntech.us/" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="https://twitter.com/intown_tech" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item ml-3">
+                <a href="https://www.instagram.com/intowntech/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <!-- Calendly badge widget begin -->
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+      <script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/intowntechnology/intown-tech-collaboration-session', text: 'Schedule Free Consultation', color: '#31b103', textColor: '#ffffff', branding: true });</script>
+      <!-- Calendly badge widget end -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Global JS -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="assets/libs/jquery-parallax.js/parallax.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/waypoints/lib/shortcuts/inview.min.js"></script>
+    <script src="assets/libs/fullpage.js/vendors/scrolloverflow.min.js"></script>
+    <script src="assets/libs/fullpage.js/dist/fullpage.min.js"></script>
+    <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="assets/js/theme.min.js"></script>
+
+  </body>
+</html>
